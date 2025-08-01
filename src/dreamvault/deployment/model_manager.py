@@ -112,6 +112,11 @@ class ModelManager:
         if (model_dir / "sentence_bert_config.json").exists():
             return "sentence_transformers"
         
+        # Check for DreamVault agent types (metadata-only models)
+        model_name = model_dir.name
+        if model_name in ["conversation_agent", "summarization_agent", "qa_agent", "instruction_agent", "embedding_agent"]:
+            return "dreamvault_agent"
+        
         return "unknown"
     
     def load_model(self, model_name: str, force_reload: bool = False) -> bool:
@@ -147,6 +152,8 @@ class ModelManager:
                     success = self._load_huggingface_model(model_name, model_info)
                 elif model_info["type"] == "sentence_transformers":
                     success = self._load_sentence_transformers_model(model_name, model_info)
+                elif model_info["type"] == "dreamvault_agent":
+                    success = self._load_dreamvault_agent(model_name, model_info)
                 else:
                     logger.error(f"Unknown model type: {model_info['type']}")
                     return False
@@ -232,6 +239,25 @@ class ModelManager:
             logger.error(f"Error loading sentence transformers model {model_name}: {e}")
             return False
     
+    def _load_dreamvault_agent(self, model_name: str, model_info: Dict[str, Any]) -> bool:
+        """Load DreamVault agent (metadata-only model)."""
+        try:
+            # For DreamVault agents, we store the model info and agent type
+            # The actual processing will be handled by the API endpoints
+            agent_type = model_name.replace("_agent", "")
+            
+            self.loaded_models[model_name] = {
+                "type": "dreamvault_agent",
+                "agent_type": agent_type,
+                "model_info": model_info,
+                "status": "ready"
+            }
+            return True
+            
+        except Exception as e:
+            logger.error(f"Error loading DreamVault agent {model_name}: {e}")
+            return False
+    
     def unload_model(self, model_name: str) -> bool:
         """
         Unload a model from memory.
@@ -255,6 +281,9 @@ class ModelManager:
                     del model_data["tokenizer"]
                 elif model_data["type"] == "sentence_transformers":
                     del model_data["model"]
+                elif model_data["type"] == "dreamvault_agent":
+                    # No special cleanup needed for metadata-only models
+                    pass
                 
                 del self.loaded_models[model_name]
                 if model_name in self.model_metadata:

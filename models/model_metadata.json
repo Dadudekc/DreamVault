@@ -1,0 +1,26 @@
+{
+  "conversation_agent": {
+    "type": "conversation",
+    "description": "AI agent trained on conversation data",
+    "training_files": 734,
+    "created": "2025-07-31 23:54:36"
+  },
+  "summarization_agent": {
+    "type": "summarization",
+    "description": "AI agent for text summarization",
+    "training_files": 734,
+    "created": "2025-07-31 23:54:36"
+  },
+  "qa_agent": {
+    "type": "qa",
+    "description": "AI agent for question answering",
+    "training_files": 734,
+    "created": "2025-07-31 23:54:36"
+  },
+  "instruction_agent": {
+    "type": "instruction",
+    "description": "AI agent for following instructions",
+    "training_files": 734,
+    "created": "2025-07-31 23:54:36"
+  }
+}

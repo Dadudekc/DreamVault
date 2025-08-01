@@ -85,7 +85,7 @@ def start_deployment(config_file: str = "configs/deployment.json", api_only: boo
         if not api_only:
             print(f"\n🌐 Starting Web Interface...")
             web_interface = AgentWebInterface(
-                api_url=f"http://{api_config.get('host', 'localhost')}:{api_config.get('port', 8000)}",
+                api_url=f"http://localhost:{api_config.get('port', 8000)}",
                 host=web_config.get('host', '0.0.0.0'),
                 port=web_config.get('port', 8080)
             )

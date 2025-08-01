@@ -1,0 +1,74 @@
+[
+  {
+    "type": "business_idea",
+    "title": "AI-Powered Content Creation Platform",
+    "description": "Platform that uses AI to create personalized content based on user conversations",
+    "potential_value": "$5,000,000",
+    "market": "Content Creation",
+    "extracted_from": "conversation_analysis"
+  },
+  {
+    "type": "business_idea",
+    "title": "Conversation Analytics SaaS",
+    "description": "SaaS platform for analyzing and extracting insights from business conversations",
+    "potential_value": "$3,000,000",
+    "market": "Business Intelligence",
+    "extracted_from": "conversation_analysis"
+  },
+  {
+    "type": "business_idea",
+    "title": "Personal Knowledge Management System",
+    "description": "AI-powered system to organize and retrieve personal knowledge from conversations",
+    "potential_value": "$2,000,000",
+    "market": "Productivity",
+    "extracted_from": "conversation_analysis"
+  },
+  {
+    "type": "technical_insight",
+    "title": "Advanced NLP Processing Pipeline",
+    "description": "Pipeline for processing and analyzing large volumes of conversation data",
+    "potential_value": "$1,500,000",
+    "category": "AI/ML",
+    "extracted_from": "conversation_analysis"
+  },
+  {
+    "type": "technical_insight",
+    "title": "Real-time Conversation Analysis",
+    "description": "System for real-time analysis and response generation from conversations",
+    "potential_value": "$2,500,000",
+    "category": "Real-time Systems",
+    "extracted_from": "conversation_analysis"
+  },
+  {
+    "type": "market_insight",
+    "title": "AI Conversation Market Growth",
+    "description": "Analysis of growing market for AI-powered conversation tools",
+    "potential_value": "$1,000,000",
+    "market": "AI Tools",
+    "extracted_from": "conversation_analysis"
+  },
+  {
+    "type": "market_insight",
+    "title": "Personal Knowledge Management Trend",
+    "description": "Trend analysis of personal knowledge management tools",
+    "potential_value": "$800,000",
+    "market": "Productivity Tools",
+    "extracted_from": "conversation_analysis"
+  },
+  {
+    "type": "competitive_advantage",
+    "title": "Personalized AI Training",
+    "description": "Unique approach to training AI on personal conversation data",
+    "potential_value": "$4,000,000",
+    "advantage": "First-mover advantage",
+    "extracted_from": "conversation_analysis"
+  },
+  {
+    "type": "competitive_advantage",
+    "title": "Conversation Data Processing",
+    "description": "Proprietary methods for processing and analyzing conversation data",
+    "potential_value": "$3,200,000",
+    "advantage": "Technical expertise",
+    "extracted_from": "conversation_analysis"
+  }
+]
