@@ -154,7 +154,7 @@ python run_scraper.py --test-cookies
 - **Error Rate**: 90% reduction in authentication errors
 - **Recovery Time**: 95% faster recovery from errors
 
-## 🎯 **Best practice-projects-projectss**
+## 🎯 **Best practice-projects-projects-projectss**
 
 ### **Cookie Maintenance**
 1. **Regular Refresh**: Re-login every 2-4 weeks

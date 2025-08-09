@@ -251,7 +251,7 @@ tokenizer = AutoTokenizer.from_pretrained("models/conversation_agent")
 model = AutoModelForCausalLM.from_pretrained("models/conversation_agent")
 ```
 
-## 💡 Best practice-projects-projectss
+## 💡 Best practice-projects-projects-projectss
 
 ### 1. Data Quality
 - **Clean conversations** - Remove sensitive data before training

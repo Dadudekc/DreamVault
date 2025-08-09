@@ -117,7 +117,7 @@ data/
 - **File System Safety**: Creates directories automatically
 - **JSON Validation**: Handles malformed progress files
 
-### **Best practice-projects-projectss**
+### **Best practice-projects-projects-projectss**
 
 1. **Regular Backups**: Backup `data/scraper_progress.json` periodically
 2. **Monitor Progress**: Check progress stats before large extractions
