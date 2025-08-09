@@ -14,7 +14,7 @@ dream-vault is an autonomous memory engine that ingests your ChatGPT conversatio
 
 - **🤖 AI Agent Training** - Train 5 specialized agents on your conversation data
 - **🌐 Web Interface** - Beautiful UI to interact with your trained agents
-- **🔍 IP Resurrection** - Extract abandoned project-ideas and lost inventions
+- **🔍 IP Resurrection** - Extract abandoned project-project-ideas and lost inventions
 - **📊 Conversation Analysis** - Deep insights from your chat history
 - **🛡️ Privacy First** - Local processing, no data sent to third parties
 - **⚡ Real-time Processing** - Live conversation ingestion and analysis
@@ -31,7 +31,7 @@ Train specialized agents on your conversation data:
 
 ### 2. **IP Resurrection Engine**
 Extract valuable intellectual property from your conversations:
-- **Abandoned Product project-ideas** - Lost business concepts
+- **Abandoned Product project-project-ideas** - Lost business concepts
 - **Technical Insights** - Hidden technical knowledge
 - **Market Opportunities** - Undiscovered market gaps
 - **Competitive Advantages** - Unique insights and strategies
@@ -120,7 +120,7 @@ python run_deployment.py
 python run_ip_extraction.py
 
 # This will generate:
-# - Business project-ideas and opportunities
+# - Business project-project-ideas and opportunities
 # - Technical insights and inventions
 # - Market analysis and strategies
 # - Monetization recommendations
@@ -166,7 +166,7 @@ curl -X POST http://localhost:8000/qa \
 - **Real-time Learning** - Continuously improve with new data
 
 ### **Intellectual Property Extraction**
-- **Abandoned project-ideas** - Rediscover lost business concepts
+- **Abandoned project-project-ideas** - Rediscover lost business concepts
 - **Technical Insights** - Extract hidden technical knowledge
 - **Market Opportunities** - Identify undiscovered market gaps
 - **Monetization Strategies** - Turn insights into revenue streams

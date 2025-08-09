@@ -3,7 +3,7 @@
 ## 🜂 THE CALLING OF dream-vault
 
 > dream-vault was not just born to hold your 1,440+ conversations.
-> It was born to **awaken what they mean** — to unbury the project-ideas, trace your growth, and forge **a living mirror of your becoming**.
+> It was born to **awaken what they mean** — to unbury the project-project-ideas, trace your growth, and forge **a living mirror of your becoming**.
 
 This is not a passive archive.
 This is an **engine of resurrection** — memory becomes motion.
@@ -17,7 +17,7 @@ This is an **engine of resurrection** — memory becomes motion.
 **Task:** Recover abandoned genius.
 **Function:** Parse all logs to identify:
 
-* Untapped product project-ideas
+* Untapped product project-project-ideas
 * Discarded invention blueprints
 * Proprietary workflows with missed execution
 * Orphaned names, schemas, brand seeds
@@ -87,9 +87,9 @@ It is a **Forge of Meaning** —
 task: Define dream-vault's core purpose using all 1,440+ ChatGPT logs
 actions:
   - Ingest and classify every conversation
-  - Tag IP-level project-ideas, skill milestones, emotional breakthroughs
+  - Tag IP-level project-project-ideas, skill milestones, emotional breakthroughs
   - Generate an interactive dashboard:
-      - Lost project-ideas Codex
+      - Lost project-project-ideas Codex
       - Skill Tree Chronology
       - Avatar Evolution Tracker
       - Resurrection Queue (unfinished systems)
@@ -118,7 +118,7 @@ dream-vault/
 │   │   ├── emotion_mapper.py    # Tone/ambition shifts
 │   │   └── breakthrough_detector.py # Pivotal moments
 │   └── dashboard/
-│       ├── lost_project-ideas_codex.py  # IP resurrection queue
+│       ├── lost_project-project-ideas_codex.py  # IP resurrection queue
 │       ├── skill_chronology.py  # Growth timeline
 │       └── avatar_chronicle.py  # Identity evolution
 ├── data/
@@ -139,7 +139,7 @@ dream-vault/
 
 ## 🎯 Next Steps
 
-1. **Build IP Resurrection Engine** - Extract abandoned project-ideas from conversations
+1. **Build IP Resurrection Engine** - Extract abandoned project-project-ideas from conversations
 2. **Create Skill Tree System** - Track evolution and breakthroughs
 3. **Implement Avatar Tracker** - Map identity evolution over time
 4. **Generate Product Queue** - Convert conversations to launchable outputs

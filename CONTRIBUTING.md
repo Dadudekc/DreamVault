@@ -93,7 +93,7 @@ When reporting bugs, please include:
 When suggesting features, please include:
 - **Use Case** - How the feature would be used
 - **Benefits** - What value it would provide
-- **Implementation project-ideas** - How it might be implemented
+- **Implementation project-project-ideas** - How it might be implemented
 - **Priority** - How important it is to you
 
 ## 🤝 Code of Conduct
@@ -106,7 +106,7 @@ When suggesting features, please include:
 ## 📞 Getting Help
 
 - **Issues** - Use GitHub issues for bugs and feature requests
-- **Discussions** - Use GitHub discussions for questions and project-ideas
+- **Discussions** - Use GitHub discussions for questions and project-project-ideas
 - **Documentation** - Check the README and code comments first
 
 ## 🎉 Recognition
