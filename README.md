@@ -1,4 +1,4 @@
-# DreamVault 🤖
+# dream-vault 🤖
 
 > **Your Personal AI Memory Engine** - Transform ChatGPT conversations into intelligent agents and extract hidden value from your digital legacy.
 
@@ -6,15 +6,15 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen.svg)]()
 
-## 🚀 What is DreamVault?
+## 🚀 What is dream-vault?
 
-DreamVault is an autonomous memory engine that ingests your ChatGPT conversations, processes them into structured knowledge, trains AI agents on your personal data, and extracts valuable intellectual property you may have forgotten.
+dream-vault is an autonomous memory engine that ingests your ChatGPT conversations, processes them into structured knowledge, trains AI agents on your personal data, and extracts valuable intellectual property you may have forgotten.
 
 ### ✨ Key Features
 
 - **🤖 AI Agent Training** - Train 5 specialized agents on your conversation data
 - **🌐 Web Interface** - Beautiful UI to interact with your trained agents
-- **🔍 IP Resurrection** - Extract abandoned ideas and lost inventions
+- **🔍 IP Resurrection** - Extract abandoned project-ideas and lost inventions
 - **📊 Conversation Analysis** - Deep insights from your chat history
 - **🛡️ Privacy First** - Local processing, no data sent to third parties
 - **⚡ Real-time Processing** - Live conversation ingestion and analysis
@@ -31,7 +31,7 @@ Train specialized agents on your conversation data:
 
 ### 2. **IP Resurrection Engine**
 Extract valuable intellectual property from your conversations:
-- **Abandoned Product Ideas** - Lost business concepts
+- **Abandoned Product project-ideas** - Lost business concepts
 - **Technical Insights** - Hidden technical knowledge
 - **Market Opportunities** - Undiscovered market gaps
 - **Competitive Advantages** - Unique insights and strategies
@@ -46,8 +46,8 @@ Deploy your trained agents with:
 ## 🏗️ Architecture
 
 ```
-DreamVault/
-├── src/dreamvault/
+dream-vault/
+├── src/dream-vault/
 │   ├── core/              # Core processing modules
 │   ├── scrapers/          # ChatGPT conversation extraction
 │   ├── agents/            # AI agent training system
@@ -69,8 +69,8 @@ DreamVault/
 
 ```bash
 # Clone the repository
-git clone https://github.com/Dadudekc/DreamVault.git
-cd DreamVault
+git clone https://github.com/dadudekc/dream-vault.git
+cd dream-vault
 
 # Install dependencies
 pip install -r requirements.txt
@@ -120,7 +120,7 @@ python run_deployment.py
 python run_ip_extraction.py
 
 # This will generate:
-# - Business ideas and opportunities
+# - Business project-ideas and opportunities
 # - Technical insights and inventions
 # - Market analysis and strategies
 # - Monetization recommendations
@@ -154,7 +154,7 @@ curl -X POST http://localhost:8000/summarize \
 # Test Q&A agent
 curl -X POST http://localhost:8000/qa \
   -H "Content-Type: application/json" \
-  -d '{"question": "What is DreamVault?", "context": "..."}'
+  -d '{"question": "What is dream-vault?", "context": "..."}'
 ```
 
 ## 📊 What You Get
@@ -166,7 +166,7 @@ curl -X POST http://localhost:8000/qa \
 - **Real-time Learning** - Continuously improve with new data
 
 ### **Intellectual Property Extraction**
-- **Abandoned Ideas** - Rediscover lost business concepts
+- **Abandoned project-ideas** - Rediscover lost business concepts
 - **Technical Insights** - Extract hidden technical knowledge
 - **Market Opportunities** - Identify undiscovered market gaps
 - **Monetization Strategies** - Turn insights into revenue streams
@@ -228,6 +228,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**DreamVault: Where your digital legacy becomes intelligent agents and hidden value becomes visible.** 🚀
+**dream-vault: Where your digital legacy becomes intelligent agents and hidden value becomes visible.** 🚀
 
 *Transform your conversations into your competitive advantage.* 

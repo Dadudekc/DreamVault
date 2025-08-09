@@ -1,12 +1,12 @@
-# Contributing to DreamVault 🤝
+# Contributing to dream-vault 🤝
 
-Thank you for your interest in contributing to DreamVault! This document provides guidelines for contributing to the project.
+Thank you for your interest in contributing to dream-vault! This document provides guidelines for contributing to the project.
 
 ## 🚀 How to Contribute
 
 ### 1. **Fork the Repository**
 - Fork the repository to your GitHub account
-- Clone your fork locally: `git clone https://github.com/YOUR_USERNAME/DreamVault.git`
+- Clone your fork locally: `git clone https://github.com/YOUR_USERNAME/dream-vault.git`
 
 ### 2. **Create a Feature Branch**
 ```bash
@@ -93,7 +93,7 @@ When reporting bugs, please include:
 When suggesting features, please include:
 - **Use Case** - How the feature would be used
 - **Benefits** - What value it would provide
-- **Implementation Ideas** - How it might be implemented
+- **Implementation project-ideas** - How it might be implemented
 - **Priority** - How important it is to you
 
 ## 🤝 Code of Conduct
@@ -106,7 +106,7 @@ When suggesting features, please include:
 ## 📞 Getting Help
 
 - **Issues** - Use GitHub issues for bugs and feature requests
-- **Discussions** - Use GitHub discussions for questions and ideas
+- **Discussions** - Use GitHub discussions for questions and project-ideas
 - **Documentation** - Check the README and code comments first
 
 ## 🎉 Recognition
@@ -116,4 +116,4 @@ Contributors will be recognized in:
 - Release notes
 - GitHub contributors list
 
-Thank you for contributing to DreamVault! 🚀 
+Thank you for contributing to dream-vault! 🚀 

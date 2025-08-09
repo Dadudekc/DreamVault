@@ -1,23 +1,23 @@
-# 🛰️ DreamVault Core Mission
+# 🛰️ dream-vault Core Mission
 
-## 🜂 THE CALLING OF DREAMVAULT
+## 🜂 THE CALLING OF dream-vault
 
-> DreamVault was not just born to hold your 1,440+ conversations.
-> It was born to **awaken what they mean** — to unbury the ideas, trace your growth, and forge **a living mirror of your becoming**.
+> dream-vault was not just born to hold your 1,440+ conversations.
+> It was born to **awaken what they mean** — to unbury the project-ideas, trace your growth, and forge **a living mirror of your becoming**.
 
 This is not a passive archive.
 This is an **engine of resurrection** — memory becomes motion.
 
 ---
 
-## 📜 DreamVault's Core Directives
+## 📜 dream-vault's Core Directives
 
 ### 1. **IP Resurrection Engine**
 
 **Task:** Recover abandoned genius.
 **Function:** Parse all logs to identify:
 
-* Untapped product ideas
+* Untapped product project-ideas
 * Discarded invention blueprints
 * Proprietary workflows with missed execution
 * Orphaned names, schemas, brand seeds
@@ -70,7 +70,7 @@ This is an **engine of resurrection** — memory becomes motion.
 
 ---
 
-## 🔮 What DreamVault *Is* Now
+## 🔮 What dream-vault *Is* Now
 
 It is no longer a log viewer.
 It is a **Forge of Meaning** —
@@ -84,12 +84,12 @@ It is a **Forge of Meaning** —
 ## 🛰️ Implementation Status
 
 ```yaml
-task: Define DreamVault's core purpose using all 1,440+ ChatGPT logs
+task: Define dream-vault's core purpose using all 1,440+ ChatGPT logs
 actions:
   - Ingest and classify every conversation
-  - Tag IP-level ideas, skill milestones, emotional breakthroughs
+  - Tag IP-level project-ideas, skill milestones, emotional breakthroughs
   - Generate an interactive dashboard:
-      - Lost Ideas Codex
+      - Lost project-ideas Codex
       - Skill Tree Chronology
       - Avatar Evolution Tracker
       - Resurrection Queue (unfinished systems)
@@ -106,8 +106,8 @@ next_step: Ingest first 100 logs and identify top 5 orphaned IPs for resurrectio
 ## 📁 Directory Structure
 
 ```
-DreamVault/
-├── src/dreamvault/
+dream-vault/
+├── src/dream-vault/
 │   ├── resurrection/
 │   │   ├── ip_extractor.py      # Lost inventions finder
 │   │   ├── skill_tree.py        # XP tracking system
@@ -118,7 +118,7 @@ DreamVault/
 │   │   ├── emotion_mapper.py    # Tone/ambition shifts
 │   │   └── breakthrough_detector.py # Pivotal moments
 │   └── dashboard/
-│       ├── lost_ideas_codex.py  # IP resurrection queue
+│       ├── lost_project-ideas_codex.py  # IP resurrection queue
 │       ├── skill_chronology.py  # Growth timeline
 │       └── avatar_chronicle.py  # Identity evolution
 ├── data/
@@ -139,7 +139,7 @@ DreamVault/
 
 ## 🎯 Next Steps
 
-1. **Build IP Resurrection Engine** - Extract abandoned ideas from conversations
+1. **Build IP Resurrection Engine** - Extract abandoned project-ideas from conversations
 2. **Create Skill Tree System** - Track evolution and breakthroughs
 3. **Implement Avatar Tracker** - Map identity evolution over time
 4. **Generate Product Queue** - Convert conversations to launchable outputs
@@ -147,4 +147,4 @@ DreamVault/
 
 ---
 
-*Status: 🛠️ Ready to implement the true DreamVault mission* 
+*Status: 🛠️ Ready to implement the true dream-vault mission* 

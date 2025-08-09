@@ -1,4 +1,4 @@
-# DreamVault Login Instructions
+# dream-vault Login Instructions
 
 ## 🚀 **How to Successfully Login**
 
@@ -101,4 +101,4 @@ python run_scraper.py --manual-timeout 600
 python run_scraper.py --manual-timeout 300 --limit 10
 ```
 
-**Follow the steps above and your DreamVault will extract all your conversations!** 🚀 
+**Follow the steps above and your dream-vault will extract all your conversations!** 🚀 

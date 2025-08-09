@@ -1,10 +1,10 @@
-# 🚀 DreamVault Agent Deployment System
+# 🚀 dream-vault Agent Deployment System
 
 Deploy your trained AI agents with a complete API server and web interface.
 
 ## 🎯 Overview
 
-The DreamVault Deployment System provides:
+The dream-vault Deployment System provides:
 
 - **🔧 REST API Server** - Serve trained agents via HTTP endpoints
 - **🌐 Web Interface** - Modern, responsive web UI for agent interaction
@@ -335,13 +335,13 @@ CMD ["python", "run_deployment.py"]
 ### Systemd Service
 ```ini
 [Unit]
-Description=DreamVault Agent Deployment
+Description=dream-vault Agent Deployment
 After=network.target
 
 [Service]
 Type=simple
-User=dreamvault
-WorkingDirectory=/opt/dreamvault
+User=dream-vault
+WorkingDirectory=/opt/dream-vault
 ExecStart=/usr/bin/python3 run_deployment.py
 Restart=always
 

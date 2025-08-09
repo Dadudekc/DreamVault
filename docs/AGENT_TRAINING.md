@@ -1,10 +1,10 @@
-# 🤖 DreamVault Agent Training System
+# 🤖 dream-vault Agent Training System
 
 Train custom AI agents on your conversation data to create personalized AI assistants.
 
 ## 🎯 Overview
 
-DreamVault's Agent Training System creates 5 specialized AI agents from your conversation data:
+dream-vault's Agent Training System creates 5 specialized AI agents from your conversation data:
 
 1. **🤖 Conversation Agent** - Responds like ChatGPT based on your style
 2. **📝 Summarization Agent** - Summarizes conversations your way  
@@ -132,7 +132,7 @@ python run_agent_training.py --agent embedding  # Uses sentence-transformers
 ## 📁 File Structure
 
 ```
-DreamVault/
+dream-vault/
 ├── data/
 │   └── training/                    # Training data
 │       ├── *_conversation_pairs.jsonl
@@ -146,7 +146,7 @@ DreamVault/
 │   ├── qa_agent/
 │   ├── instruction_agent/
 │   └── embedding_agent/
-└── src/dreamvault/agents/           # Agent training code
+└── src/dream-vault/agents/           # Agent training code
     ├── conversation_agent.py
     ├── summarization_agent.py
     ├── qa_agent.py
@@ -161,7 +161,7 @@ DreamVault/
 Each agent trainer supports customization:
 
 ```python
-from dreamvault.agents import ConversationAgentTrainer
+from dream-vault.agents import ConversationAgentTrainer
 
 trainer = ConversationAgentTrainer(
     training_data_dir="data/training",
@@ -191,7 +191,7 @@ python run_agent_training.py --stats
 
 Output:
 ```
-📊 DreamVault Agent Training Statistics
+📊 dream-vault Agent Training Statistics
 ==================================================
 
 Conversation Agent:
@@ -222,7 +222,7 @@ python run_agent_training.py --test
 
 ### Test Individual Agents
 ```python
-from dreamvault.agents import ConversationAgentTrainer
+from dream-vault.agents import ConversationAgentTrainer
 
 trainer = ConversationAgentTrainer()
 response = trainer.generate_response("Hello, how are you?")
@@ -237,7 +237,7 @@ import openai
 
 # Use your fine-tuned model
 response = openai.ChatCompletion.create(
-    model="ft:gpt-3.5-turbo:your-org:dreamvault-conversation:abc123",
+    model="ft:gpt-3.5-turbo:your-org:dream-vault-conversation:abc123",
     messages=[{"role": "user", "content": "Hello!"}]
 )
 ```
@@ -251,7 +251,7 @@ tokenizer = AutoTokenizer.from_pretrained("models/conversation_agent")
 model = AutoModelForCausalLM.from_pretrained("models/conversation_agent")
 ```
 
-## 💡 Best Practices
+## 💡 Best practice-projectss
 
 ### 1. Data Quality
 - **Clean conversations** - Remove sensitive data before training
@@ -300,7 +300,7 @@ pip install transformers torch datasets
 **Memory issues:**
 ```bash
 # Reduce batch size in training arguments
-# Edit src/dreamvault/agents/*.py
+# Edit src/dream-vault/agents/*.py
 per_device_train_batch_size=2  # Reduce from 4
 ```
 
@@ -325,7 +325,7 @@ After training your agents:
 - [OpenAI Fine-tuning Guide](https://platform.openai.com/docs/guides/fine-tuning)
 - [Hugging Face Training](https://huggingface.co/docs/transformers/training)
 - [Sentence Transformers](https://www.sbert.net/)
-- [DreamVault Documentation](./README.md)
+- [dream-vault Documentation](./README.md)
 
 ---
 

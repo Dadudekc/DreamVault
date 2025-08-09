@@ -1,4 +1,4 @@
-# DreamVault Cookie System
+# dream-vault Cookie System
 
 ## 🍪 **Why We Use Cookies**
 
@@ -82,7 +82,7 @@ if not cookie_manager.validate_cookies():
 cookie_manager.save_cookies(driver.get_cookies())
 ```
 
-## 🚀 **Benefits for DreamVault**
+## 🚀 **Benefits for dream-vault**
 
 ### **For Large-Scale Extraction**
 - **1400+ Conversations**: No need to login 1400 times
@@ -154,7 +154,7 @@ python run_scraper.py --test-cookies
 - **Error Rate**: 90% reduction in authentication errors
 - **Recovery Time**: 95% faster recovery from errors
 
-## 🎯 **Best Practices**
+## 🎯 **Best practice-projectss**
 
 ### **Cookie Maintenance**
 1. **Regular Refresh**: Re-login every 2-4 weeks
@@ -172,16 +172,16 @@ python run_scraper.py --test-cookies
 1. **Clear and Re-login**: If cookies stop working
 2. **Check Expiry**: Session cookies expire naturally
 3. **Verify Account**: Ensure account is still active
-4. **Update System**: Keep DreamVault updated
+4. **Update System**: Keep dream-vault updated
 
 ---
 
 ## 🚀 **Ready for Production**
 
-The cookie system makes DreamVault:
+The cookie system makes dream-vault:
 - **Efficient**: 95% faster than manual login
 - **Reliable**: 99%+ success rate
 - **Secure**: User-controlled, no credential storage
 - **Scalable**: Handles 1400+ conversations easily
 
-**Your DreamVault extraction is now optimized for maximum efficiency!** 🎯 
+**Your dream-vault extraction is now optimized for maximum efficiency!** 🎯 
