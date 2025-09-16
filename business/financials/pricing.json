@@ -1,0 +1,62 @@
+{
+  "tiers": {
+    "free": {
+      "price": 0,
+      "features": [
+        "10 conversations processed",
+        "Basic AI agent training",
+        "Limited IP extraction (5 items)",
+        "Community support",
+        "Basic web interface"
+      ],
+      "limits": {
+        "conversations": 10,
+        "ip_extractions": 5,
+        "api_calls": 100,
+        "storage_mb": 100
+      }
+    },
+    "pro": {
+      "price": 99,
+      "billing": "monthly",
+      "features": [
+        "Unlimited conversations",
+        "Advanced AI training (all 5 agents)",
+        "Full IP extraction",
+        "Priority support",
+        "API access",
+        "Advanced analytics",
+        "Export capabilities"
+      ],
+      "limits": {
+        "conversations": -1,
+        "ip_extractions": -1,
+        "api_calls": 10000,
+        "storage_mb": 1000
+      }
+    },
+    "enterprise": {
+      "price": 999,
+      "billing": "monthly",
+      "features": [
+        "Everything in Pro",
+        "Custom AI models",
+        "White-label deployment",
+        "Dedicated support",
+        "Advanced analytics",
+        "Custom integrations",
+        "SLA guarantee",
+        "On-premise deployment option"
+      ],
+      "limits": {
+        "conversations": -1,
+        "ip_extractions": -1,
+        "api_calls": 100000,
+        "storage_mb": 10000
+      }
+    }
+  },
+  "annual_discount": 0.2,
+  "trial_period_days": 14,
+  "money_back_guarantee_days": 30
+}

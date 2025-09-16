@@ -1,0 +1,81 @@
+{
+  "subscription_management": {
+    "create_subscription": {
+      "method": "POST",
+      "endpoint": "/api/subscriptions",
+      "description": "Create a new subscription",
+      "parameters": {
+        "email": "string",
+        "name": "string",
+        "plan": "string",
+        "payment_method": "string",
+        "trial_days": "integer"
+      },
+      "response": {
+        "subscription_id": "string",
+        "status": "string",
+        "trial_end": "datetime"
+      }
+    },
+    "update_subscription": {
+      "method": "PUT",
+      "endpoint": "/api/subscriptions/{id}",
+      "description": "Update subscription plan",
+      "parameters": {
+        "plan": "string",
+        "payment_method": "string"
+      }
+    },
+    "cancel_subscription": {
+      "method": "DELETE",
+      "endpoint": "/api/subscriptions/{id}",
+      "description": "Cancel subscription"
+    },
+    "get_subscription": {
+      "method": "GET",
+      "endpoint": "/api/subscriptions/{id}",
+      "description": "Get subscription details"
+    }
+  },
+  "usage_tracking": {
+    "get_usage": {
+      "method": "GET",
+      "endpoint": "/api/usage",
+      "description": "Get current usage statistics",
+      "response": {
+        "conversations_used": "integer",
+        "conversations_limit": "integer",
+        "ip_extractions_used": "integer",
+        "ip_extractions_limit": "integer",
+        "api_calls_used": "integer",
+        "api_calls_limit": "integer"
+      }
+    },
+    "increment_usage": {
+      "method": "POST",
+      "endpoint": "/api/usage/increment",
+      "description": "Increment usage counters",
+      "parameters": {
+        "type": "string",
+        "amount": "integer"
+      }
+    }
+  },
+  "billing_info": {
+    "get_invoices": {
+      "method": "GET",
+      "endpoint": "/api/billing/invoices",
+      "description": "Get billing history"
+    },
+    "update_payment_method": {
+      "method": "PUT",
+      "endpoint": "/api/billing/payment-method",
+      "description": "Update payment method"
+    },
+    "get_billing_info": {
+      "method": "GET",
+      "endpoint": "/api/billing/info",
+      "description": "Get billing information"
+    }
+  }
+}

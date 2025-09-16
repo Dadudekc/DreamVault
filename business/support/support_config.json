@@ -1,0 +1,64 @@
+{
+  "channels": {
+    "email": {
+      "address": "support@dreamvault.ai",
+      "response_time": "24 hours",
+      "availability": "24/7"
+    },
+    "documentation": {
+      "url": "/docs",
+      "sections": [
+        "Getting Started",
+        "ChatGPT Import Guide",
+        "AI Agent Training",
+        "IP Extraction",
+        "API Documentation",
+        "Troubleshooting"
+      ]
+    },
+    "video_tutorials": [
+      "How to import ChatGPT conversations",
+      "Training your first AI agent",
+      "Understanding IP extraction results",
+      "Using the web interface",
+      "API integration basics"
+    ]
+  },
+  "faq": [
+    {
+      "question": "Is my conversation data secure?",
+      "answer": "Yes! All processing happens locally on your machine. We never store or access your personal conversations."
+    },
+    {
+      "question": "How long does AI training take?",
+      "answer": "Training typically takes 15-30 minutes depending on the size of your conversation history."
+    },
+    {
+      "question": "Can I export my trained AI agents?",
+      "answer": "Yes, Pro and Enterprise users can export their trained models for use in other applications."
+    },
+    {
+      "question": "What if I'm not satisfied?",
+      "answer": "We offer a 30-day money-back guarantee. No questions asked."
+    }
+  ],
+  "sla": {
+    "pro": {
+      "uptime": "99.5%",
+      "response_time": "24 hours",
+      "support_channels": [
+        "email",
+        "documentation"
+      ]
+    },
+    "enterprise": {
+      "uptime": "99.9%",
+      "response_time": "4 hours",
+      "support_channels": [
+        "email",
+        "phone",
+        "dedicated_support"
+      ]
+    }
+  }
+}

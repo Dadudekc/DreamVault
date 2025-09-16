@@ -1,0 +1,52 @@
+{
+  "business_model": {
+    "type": "SaaS Subscription",
+    "revenue_model": "Monthly Recurring Revenue (MRR)",
+    "pricing_strategy": "Freemium with tiered pricing",
+    "target_market": "Knowledge workers, content creators, entrepreneurs"
+  },
+  "financial_highlights": {
+    "break_even_month": 6,
+    "break_even_customers": 100,
+    "year_1_revenue_target": 150000,
+    "year_2_revenue_target": 2500000,
+    "year_3_revenue_target": 25000000,
+    "gross_margin": 0.8,
+    "net_margin_target": 0.6
+  },
+  "key_metrics": {
+    "customer_acquisition_cost": 150,
+    "lifetime_value": 2376,
+    "ltv_cac_ratio": 15.84,
+    "monthly_churn_rate": 0.05,
+    "annual_churn_rate": 0.4,
+    "gross_revenue_retention": 0.95,
+    "net_revenue_retention": 1.2
+  },
+  "funding_requirements": {
+    "seed_round": {
+      "amount": 500000,
+      "use_of_funds": [
+        "Product development (40%)",
+        "Marketing and customer acquisition (30%)",
+        "Team expansion (20%)",
+        "Operations and infrastructure (10%)"
+      ]
+    },
+    "series_a": {
+      "amount": 5000000,
+      "use_of_funds": [
+        "Market expansion (35%)",
+        "Product development (25%)",
+        "Team scaling (25%)",
+        "Marketing and sales (15%)"
+      ]
+    }
+  },
+  "revenue_drivers": {
+    "primary": "Subscription renewals and upgrades",
+    "secondary": "Enterprise custom implementations",
+    "tertiary": "API usage fees and overages",
+    "growth_strategy": "Freemium conversion and enterprise sales"
+  }
+}

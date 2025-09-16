@@ -1,0 +1,72 @@
+{
+  "monthly_targets": {
+    "month_1": {
+      "free_users": 50,
+      "paid_users": 5,
+      "mrr": 495,
+      "conversion_rate": 0.1
+    },
+    "month_3": {
+      "free_users": 200,
+      "paid_users": 25,
+      "mrr": 2475,
+      "conversion_rate": 0.12
+    },
+    "month_6": {
+      "free_users": 1000,
+      "paid_users": 100,
+      "mrr": 9900,
+      "conversion_rate": 0.15
+    },
+    "month_12": {
+      "free_users": 5000,
+      "paid_users": 500,
+      "mrr": 49500,
+      "conversion_rate": 0.2
+    }
+  },
+  "annual_projections": {
+    "year_1": {
+      "total_revenue": 150000,
+      "avg_mrr": 12500,
+      "customers": 500,
+      "churn_rate": 0.05,
+      "ltv": 2376,
+      "cac": 150
+    },
+    "year_2": {
+      "total_revenue": 2500000,
+      "avg_mrr": 208333,
+      "customers": 5000,
+      "churn_rate": 0.03,
+      "ltv": 3960,
+      "cac": 100
+    },
+    "year_3": {
+      "total_revenue": 25000000,
+      "avg_mrr": 2083333,
+      "customers": 50000,
+      "churn_rate": 0.02,
+      "ltv": 5940,
+      "cac": 75
+    }
+  },
+  "unit_economics": {
+    "pro_plan": {
+      "monthly_price": 99,
+      "annual_price": 792,
+      "gross_margin": 0.8,
+      "customer_support_cost": 5,
+      "infrastructure_cost": 10,
+      "net_margin": 0.65
+    },
+    "enterprise_plan": {
+      "monthly_price": 999,
+      "annual_price": 7992,
+      "gross_margin": 0.85,
+      "customer_support_cost": 50,
+      "infrastructure_cost": 100,
+      "net_margin": 0.75
+    }
+  }
+}
