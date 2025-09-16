@@ -1,0 +1,151 @@
+# Dream.OS LoRA Training Configuration
+# Configuration for LoRA fine-tuning of language models
+
+# Model Configuration
+model:
+  base_model: "meta-llama/Llama-3-8b-instruct"
+  # Alternatives:
+  # - "microsoft/DialoGPT-large"
+  # - "meta-llama/Llama-2-7b-chat-hf"
+  # - "mistralai/Mistral-7B-Instruct-v0.1"
+  
+  torch_dtype: "bfloat16"
+  device_map: "auto"
+  trust_remote_code: true
+  low_cpu_mem_usage: true
+
+# LoRA Configuration
+lora:
+  r: 16                    # Rank
+  lora_alpha: 32           # Scaling factor
+  lora_dropout: 0.05       # Dropout rate
+  bias: "none"             # Bias training
+  task_type: "CAUSAL_LM"
+  
+  # Target modules for LoRA adaptation
+  target_modules:
+    - "q_proj"
+    - "v_proj" 
+    - "k_proj"
+    - "o_proj"
+    - "gate_proj"
+    - "up_proj"
+    - "down_proj"
+
+# Training Configuration
+training:
+  # Dataset paths
+  train_data: "data/processed/train_hf.jsonl"
+  val_data: "data/processed/val_hf.jsonl"
+  
+  # Training hyperparameters
+  num_train_epochs: 2
+  per_device_train_batch_size: 1
+  per_device_eval_batch_size: 1
+  gradient_accumulation_steps: 8
+  learning_rate: 2e-4
+  weight_decay: 0.01
+  warmup_ratio: 0.1
+  lr_scheduler_type: "cosine"
+  
+  # Mixed precision
+  bf16: true
+  fp16: false
+  
+  # Gradient clipping
+  max_grad_norm: 1.0
+  
+  # Optimizer
+  adam_beta1: 0.9
+  adam_beta2: 0.999
+  adam_epsilon: 1e-8
+
+# Evaluation Configuration
+evaluation:
+  evaluation_strategy: "steps"
+  eval_steps: 100
+  metric_for_best_model: "eval_loss"
+  greater_is_better: false
+  
+  # Early stopping
+  early_stopping_patience: 3
+  early_stopping_threshold: 0.001
+
+# Logging Configuration
+logging:
+  logging_steps: 10
+  logging_first_step: true
+  logging_strategy: "steps"
+  
+  # Wandb/Tensorboard
+  report_to: null  # Set to "wandb" or "tensorboard" to enable
+  run_name: "dreamos-lora-training"
+
+# Saving Configuration
+saving:
+  output_dir: "lora_output"
+  save_strategy: "steps"
+  save_steps: 200
+  save_total_limit: 3
+  save_safetensors: true
+  
+  # Checkpointing
+  load_best_model_at_end: true
+  resume_from_checkpoint: null
+
+# Data Processing Configuration
+data:
+  max_seq_length: 2048
+  padding: false
+  truncation: true
+  
+  # Data collator
+  data_collator: "DataCollatorForLanguageModeling"
+  mlm: false
+  pad_to_multiple_of: 8
+
+# Performance Configuration
+performance:
+  dataloader_num_workers: 4
+  dataloader_pin_memory: false
+  remove_unused_columns: true
+  
+  # Memory optimization
+  gradient_checkpointing: false
+  ddp_find_unused_parameters: false
+
+# Reproducibility
+reproducibility:
+  seed: 42
+  deterministic: true
+  use_deterministic_algorithms: true
+
+# Monitoring Configuration
+monitoring:
+  # GPU monitoring
+  gpu_memory_fraction: 0.9
+  
+  # Training metrics to track
+  metrics:
+    - "train_loss"
+    - "eval_loss"
+    - "learning_rate"
+    - "epoch"
+    - "train_runtime"
+    - "train_samples_per_second"
+
+# Style Preservation Configuration
+style:
+  # Style tags to preserve during training
+  preserve_style_tags:
+    - "ellipsis_preference"
+    - "vibe_mode"
+    - "bullet_density"
+    - "swarm_terminology"
+  
+  # Style loss weight (if using custom loss)
+  style_loss_weight: 0.1
+  
+  # Style evaluation during training
+  evaluate_style_fidelity: true
+  style_eval_steps: 500
