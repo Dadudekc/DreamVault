@@ -1,0 +1,14 @@
+{
+  "data_collection": "We collect minimal account information and usage analytics",
+  "data_processing": "All conversation processing happens locally on user's machine",
+  "data_sharing": "We never share personal conversation data with third parties",
+  "data_retention": "Account data retained while account is active",
+  "user_rights": [
+    "Right to access your data",
+    "Right to delete your account and data",
+    "Right to data portability",
+    "Right to opt out of analytics"
+  ],
+  "cookies": "We use minimal cookies for authentication and analytics only",
+  "gdpr_compliance": "Full GDPR compliance for EU users"
+}

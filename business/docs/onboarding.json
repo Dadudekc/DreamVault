@@ -1,0 +1,56 @@
+{
+  "steps": [
+    {
+      "step": 1,
+      "title": "Welcome & Account Setup",
+      "description": "Create your account and verify email",
+      "estimated_time": "2 minutes",
+      "required": true
+    },
+    {
+      "step": 2,
+      "title": "Connect ChatGPT Account",
+      "description": "Import your conversation history",
+      "estimated_time": "5 minutes",
+      "required": true,
+      "help_text": "We'll help you export your ChatGPT conversations securely"
+    },
+    {
+      "step": 3,
+      "title": "Process Your Conversations",
+      "description": "Let our AI analyze your conversations",
+      "estimated_time": "10 minutes",
+      "required": true,
+      "help_text": "This runs automatically in the background"
+    },
+    {
+      "step": 4,
+      "title": "Train Your AI Agents",
+      "description": "Create personalized AI agents from your knowledge",
+      "estimated_time": "15 minutes",
+      "required": true,
+      "help_text": "We'll train 5 specialized agents on your data"
+    },
+    {
+      "step": 5,
+      "title": "Explore Your IP Value",
+      "description": "Discover hidden business opportunities",
+      "estimated_time": "5 minutes",
+      "required": false,
+      "help_text": "See what valuable insights we found in your conversations"
+    },
+    {
+      "step": 6,
+      "title": "Start Using Your Agents",
+      "description": "Interact with your trained AI agents",
+      "estimated_time": "5 minutes",
+      "required": false,
+      "help_text": "Try asking your agents questions about your expertise"
+    }
+  ],
+  "success_metrics": {
+    "completion_rate_target": 0.8,
+    "time_to_value_target": "30 minutes",
+    "customer_satisfaction_target": 4.5
+  }
+}

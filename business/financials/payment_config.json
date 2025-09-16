@@ -1,0 +1,132 @@
+{
+  "pricing_tiers": {
+    "free": {
+      "price": 0,
+      "currency": "usd",
+      "interval": "month",
+      "features": [
+        "10 conversations processed",
+        "Basic AI agent training",
+        "Limited IP extraction (5 items)",
+        "Community support",
+        "Basic web interface"
+      ],
+      "limits": {
+        "conversations": 10,
+        "ip_extractions": 5,
+        "api_calls": 100,
+        "storage_mb": 100
+      }
+    },
+    "pro": {
+      "price": 99,
+      "currency": "usd",
+      "interval": "month",
+      "annual_discount": 0.2,
+      "features": [
+        "Unlimited conversations",
+        "Advanced AI training (all 5 agents)",
+        "Full IP extraction",
+        "Priority support",
+        "API access",
+        "Advanced analytics",
+        "Export capabilities"
+      ],
+      "limits": {
+        "conversations": -1,
+        "ip_extractions": -1,
+        "api_calls": 10000,
+        "storage_mb": 1000
+      }
+    },
+    "enterprise": {
+      "price": 999,
+      "currency": "usd",
+      "interval": "month",
+      "annual_discount": 0.2,
+      "features": [
+        "Everything in Pro",
+        "Custom AI models",
+        "White-label deployment",
+        "Dedicated support",
+        "Advanced analytics",
+        "Custom integrations",
+        "SLA guarantee",
+        "On-premise deployment option"
+      ],
+      "limits": {
+        "conversations": -1,
+        "ip_extractions": -1,
+        "api_calls": 100000,
+        "storage_mb": 10000
+      }
+    }
+  },
+  "billing": {
+    "trial_period_days": 14,
+    "grace_period_days": 3,
+    "invoice_reminder_days": [
+      7,
+      3,
+      1
+    ],
+    "payment_method_types": [
+      "card"
+    ],
+    "allowed_countries": [
+      "US",
+      "CA",
+      "GB",
+      "AU",
+      "DE",
+      "FR",
+      "NL",
+      "SE",
+      "DK",
+      "NO"
+    ],
+    "tax_rates": {
+      "us": 0.08,
+      "ca": 0.13,
+      "eu": 0.2
+    }
+  },
+  "payment_processor": {
+    "provider": "stripe",
+    "environment": "test",
+    "webhook_events": [
+      "customer.subscription.created",
+      "customer.subscription.updated",
+      "customer.subscription.deleted",
+      "invoice.payment_succeeded",
+      "invoice.payment_failed",
+      "customer.subscription.trial_will_end"
+    ]
+  },
+  "usage_tracking": {
+    "conversations_processed": {
+      "limit_type": "monthly",
+      "reset_period": "month",
+      "free_limit": 10,
+      "pro_limit": -1
+    },
+    "ip_extractions": {
+      "limit_type": "monthly",
+      "reset_period": "month",
+      "free_limit": 5,
+      "pro_limit": -1
+    },
+    "api_calls": {
+      "limit_type": "monthly",
+      "reset_period": "month",
+      "free_limit": 100,
+      "pro_limit": 10000
+    },
+    "storage_usage": {
+      "limit_type": "monthly",
+      "reset_period": "month",
+      "free_limit": 100,
+      "pro_limit": 1000
+    }
+  }
+}

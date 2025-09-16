@@ -1,0 +1,14 @@
+{
+  "service_description": "Dream-Vault provides AI-powered conversation analysis and agent training services",
+  "user_responsibilities": [
+    "Provide accurate account information",
+    "Use service in compliance with applicable laws",
+    "Not attempt to reverse engineer or compromise the system",
+    "Respect intellectual property rights"
+  ],
+  "service_availability": "99.5% uptime for Pro users, 99.9% for Enterprise",
+  "data_handling": "All processing happens locally, no data stored on our servers",
+  "liability": "Limited liability for service interruptions, maximum refund of fees paid",
+  "termination": "Either party may terminate with 30 days notice",
+  "governing_law": "Delaware, USA"
+}

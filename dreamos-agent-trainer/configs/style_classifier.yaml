@@ -1,0 +1,212 @@
+# Dream.OS Style Classifier Configuration
+# Configuration for Victor's writing style analysis and classification
+
+# Style Analysis Configuration
+style_analysis:
+  # Text preprocessing
+  preprocessing:
+    remove_html: true
+    normalize_whitespace: true
+    preserve_code_blocks: true
+    remove_urls: true
+    
+  # Style patterns to detect
+  patterns:
+    ellipsis:
+      enabled: true
+      threshold: 0.3  # Ratio of ellipsis to commas
+      min_count: 1
+      
+    vibe_mode:
+      enabled: true
+      keywords:
+        - "vibe"
+        - "closure-first"
+        - "swarm"
+        - "orchestrate"
+        - "cadence"
+        
+    bullet_density:
+      enabled: true
+      patterns:
+        - "\n- "
+        - "\n• "
+        - "\n* "
+        - "^\d+\."
+        - "^[•▪▫]"
+      high_density_threshold: 3
+      
+    short_lines:
+      enabled: true
+      max_line_length: 60
+      min_lines_for_style: 5
+      
+    closure_first:
+      enabled: true
+      indicators:
+        - "closure-first"
+        - "bottom line"
+        - "tl;dr"
+        - "summary:"
+        - "conclusion:"
+        
+    swarm_terminology:
+      enabled: true
+      terms:
+        - "swarm"
+        - "orchestrate"
+        - "cadence"
+        - "vibe"
+        - "dreamos"
+        - "dream.os"
+        
+    emoji_usage:
+      enabled: true
+      patterns:
+        - "[🛰️📜⸻🎯✅❌⚠️💾🗄️📂📄🔢📊]"
+        
+    technical_density:
+      enabled: true
+      terms:
+        - "api"
+        - "endpoint"
+        - "config"
+        - "schema"
+        - "database"
+        - "vector"
+        - "embedding"
+        - "rag"
+        - "lora"
+        - "fine-tune"
+        - "model"
+        - "inference"
+        - "token"
+        - "context"
+        - "prompt"
+        - "completion"
+        - "instruction"
+        - "supervised"
+        - "unsupervised"
+      density_threshold: 0.1
+
+# Classification Configuration
+classification:
+  # Style categories
+  categories:
+    ellipsis_heavy:
+      weight: 0.3
+      indicators: ["ellipsis_preference"]
+      
+    bullet_structured:
+      weight: 0.25
+      indicators: ["bullet_density"]
+      
+    vibe_coding:
+      weight: 0.2
+      indicators: ["vibe_mode", "swarm_terminology"]
+      
+    technical_dense:
+      weight: 0.15
+      indicators: ["technical_density"]
+      
+    concise_lines:
+      weight: 0.1
+      indicators: ["short_lines"]
+      
+    balanced:
+      weight: 0.0
+      indicators: []  # Default category
+
+  # Classification thresholds
+  thresholds:
+    high_confidence: 0.8
+    medium_confidence: 0.6
+    low_confidence: 0.4
+
+# Fidelity Evaluation Configuration
+fidelity:
+  # Metrics for style fidelity calculation
+  metrics:
+    ellipsis_consistency:
+      weight: 0.2
+      
+    bullet_pattern_match:
+      weight: 0.2
+      
+    terminology_usage:
+      weight: 0.2
+      
+    line_length_consistency:
+      weight: 0.15
+      
+    technical_density_match:
+      weight: 0.15
+      
+    emoji_usage_consistency:
+      weight: 0.1
+
+  # Fidelity thresholds
+  thresholds:
+    excellent: 0.9
+    good: 0.8
+    acceptable: 0.7
+    poor: 0.6
+
+# Training Configuration (for style classifier model)
+training:
+  # Model configuration
+  model_type: "text_classifier"
+  base_model: "distilbert-base-uncased"
+  
+  # Training hyperparameters
+  learning_rate: 2e-5
+  batch_size: 16
+  num_epochs: 3
+  
+  # Data configuration
+  max_length: 512
+  train_split: 0.8
+  val_split: 0.1
+  test_split: 0.1
+
+# Evaluation Configuration
+evaluation:
+  # Metrics to calculate
+  metrics:
+    - "accuracy"
+    - "precision"
+    - "recall"
+    - "f1"
+    - "confusion_matrix"
+    
+  # Cross-validation
+  cv_folds: 5
+  
+  # Reporting
+  generate_report: true
+  save_predictions: true
+
+# Deployment Configuration
+deployment:
+  # Model serving
+  model_path: "models/style_classifier"
+  batch_size: 32
+  
+  # API configuration
+  api:
+    enabled: false
+    host: "localhost"
+    port: 8000
+    
+  # Caching
+  cache_predictions: true
+  cache_size: 1000
+  cache_ttl: 3600  # seconds
+
+# Logging Configuration
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/style_classifier.log"
+  max_size_mb: 50
+  backup_count: 3

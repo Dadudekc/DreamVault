@@ -1,0 +1,76 @@
+{
+  "dashboard_sections": {
+    "subscription_status": {
+      "title": "Subscription Status",
+      "components": [
+        "current_plan",
+        "billing_cycle",
+        "next_billing_date",
+        "trial_status",
+        "usage_limits"
+      ]
+    },
+    "usage_analytics": {
+      "title": "Usage Analytics",
+      "components": [
+        "conversations_processed_chart",
+        "ip_extractions_chart",
+        "api_calls_chart",
+        "storage_usage_chart"
+      ]
+    },
+    "billing_history": {
+      "title": "Billing History",
+      "components": [
+        "invoice_list",
+        "payment_method",
+        "download_invoice",
+        "payment_history"
+      ]
+    },
+    "plan_management": {
+      "title": "Plan Management",
+      "components": [
+        "upgrade_downgrade_options",
+        "billing_frequency_toggle",
+        "cancel_subscription",
+        "reactivate_subscription"
+      ]
+    }
+  },
+  "notifications": {
+    "usage_alerts": {
+      "free_tier": [
+        0.8,
+        0.9,
+        1.0
+      ],
+      "pro_tier": [
+        0.9,
+        1.0
+      ]
+    },
+    "billing_alerts": {
+      "payment_failed": true,
+      "subscription_expiring": 7,
+      "trial_ending": 3
+    },
+    "feature_alerts": {
+      "limit_reached": true,
+      "upgrade_suggestions": true
+    }
+  },
+  "ui_components": {
+    "usage_bar": {
+      "type": "progress_bar",
+      "show_percentage": true,
+      "show_limit": true,
+      "color_scheme": "green_yellow_red"
+    },
+    "plan_comparison": {
+      "type": "comparison_table",
+      "highlight_current": true,
+      "show_upgrade_path": true
+    }
+  }
+}

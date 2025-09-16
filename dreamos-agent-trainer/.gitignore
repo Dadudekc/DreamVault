@@ -1,0 +1,95 @@
+# Dream.OS Agent Trainer - Git Ignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Data files (keep structure, ignore content)
+data/transcripts_raw/*
+!data/transcripts_raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Model files and checkpoints
+lora_output/
+lora_checkpoints/
+models/
+*.bin
+*.safetensors
+*.pt
+*.pth
+
+# Database files
+*.sqlite
+*.sqlite3
+*.db
+
+# Embeddings and vector stores
+*.npz
+*.npy
+*.pkl
+*.pickle
+faiss_index.bin
+
+# Logs
+logs/
+*.log
+
+# Exports
+exports/
+*.tar.gz
+
+# Evaluation results
+eval_report.md
+eval_metrics.json
+
+# Configuration overrides
+config_local.yaml
+.env
+.env.local
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+.cache/

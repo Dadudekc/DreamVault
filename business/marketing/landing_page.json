@@ -1,0 +1,40 @@
+{
+  "headline": "Turn Your ChatGPT Conversations Into $23M+ in Business Value",
+  "subheadline": "Train AI agents on your expertise and discover hidden opportunities in your conversation history",
+  "cta_primary": "Start Free Trial",
+  "cta_secondary": "Watch Demo",
+  "features": [
+    {
+      "title": "AI Agent Training",
+      "description": "Train 5 specialized AI agents on your conversation data",
+      "icon": "\ud83e\udd16"
+    },
+    {
+      "title": "IP Extraction",
+      "description": "Discover valuable business ideas and opportunities worth millions",
+      "icon": "\ud83d\udca1"
+    },
+    {
+      "title": "Privacy First",
+      "description": "Complete local processing - your data never leaves your control",
+      "icon": "\ud83d\udd12"
+    },
+    {
+      "title": "Easy Setup",
+      "description": "Import ChatGPT conversations and start training in minutes",
+      "icon": "\u26a1"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "I found $5M in business opportunities I had completely forgotten about!",
+      "author": "Sarah Chen, Business Consultant",
+      "avatar": "\ud83d\udc69\u200d\ud83d\udcbc"
+    },
+    {
+      "quote": "My AI agents now know more about my expertise than I do.",
+      "author": "Mike Rodriguez, Content Creator",
+      "avatar": "\ud83d\udc68\u200d\ud83d\udcbb"
+    }
+  ]
+}

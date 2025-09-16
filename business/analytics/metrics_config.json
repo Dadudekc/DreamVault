@@ -1,0 +1,66 @@
+{
+  "kpis": {
+    "revenue": {
+      "mrr": 0,
+      "arr": 0,
+      "churn_rate": 0,
+      "ltv": 0,
+      "cac": 0
+    },
+    "customers": {
+      "total_users": 0,
+      "free_users": 0,
+      "paid_users": 0,
+      "trial_users": 0,
+      "conversion_rate": 0
+    },
+    "product": {
+      "onboarding_completion": 0,
+      "feature_adoption": {},
+      "user_satisfaction": 0,
+      "system_uptime": 0
+    },
+    "support": {
+      "ticket_volume": 0,
+      "response_time": 0,
+      "resolution_rate": 0,
+      "customer_satisfaction": 0
+    }
+  },
+  "targets": {
+    "month_1": {
+      "mrr": 500,
+      "paid_customers": 5,
+      "free_users": 50,
+      "conversion_rate": 0.1
+    },
+    "month_3": {
+      "mrr": 2500,
+      "paid_customers": 25,
+      "free_users": 200,
+      "conversion_rate": 0.12
+    },
+    "month_6": {
+      "mrr": 10000,
+      "paid_customers": 100,
+      "free_users": 1000,
+      "conversion_rate": 0.15
+    },
+    "year_1": {
+      "mrr": 50000,
+      "paid_customers": 500,
+      "free_users": 5000,
+      "conversion_rate": 0.2
+    }
+  },
+  "tracking": {
+    "analytics": [
+      "Google Analytics",
+      "Mixpanel",
+      "Amplitude"
+    ],
+    "revenue": "Stripe",
+    "support": "Intercom",
+    "feedback": "Typeform"
+  }
+}
